@@ -5,12 +5,10 @@
 </div>
 
 ### Requirements
-- Linux OS
-- Python 3.5 or higher (Python 2 is not supported)
+- Python 3.5 or higher
 - PyTorch 1.2 or higher
 - CUDA 9.2 or higher
 - GCC(G++) 4.9 or higher
-
 
 ### Installation
 
@@ -47,8 +45,7 @@ e. Prepare dataset and checkpoint file.
 
 Download [coco dataset](http://cocodataset.org/#download) and [checkpoint file](https://drive.google.com/drive/folders/1GC3AlgTRo9xgH_ydVYatLS8BGW0hV_w-?usp=sharing)
 
-Folder structure should be as follows:
-
+Folder structure:
 ```
 TinyDet
 ├── mmdet
@@ -78,9 +75,5 @@ python -m torch.distributed.launch --nproc_per_node=1 ./tools/test.py \
             --launcher pytorch                 
 ```
 
-### FLOPs
-```
-python tools/get_flops.py configs/tinydet_M.py --shape 320
-```
 
 
