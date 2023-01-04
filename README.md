@@ -76,4 +76,21 @@ python -m torch.distributed.launch --nproc_per_node=1 ./tools/test.py \
 ```
 
 
+### Citation
+
+If you find our paper and code useful in your research, please consider giving a star ⭐ and citation 📝 :
+
+
+```
+@article{chen2023tinydet,
+  title={TinyDet: accurately detecting small objects within 1 GFLOPs},
+  author={Chen, Shaoyu and Cheng, Tianheng and Fang, Jiemin and Zhang, Qian and Li, Yuan and Liu, Wenyu and Wang, Xinggang},
+  journal={Science China Information Sciences},
+  volume={66},
+  number={1},
+  pages={1--2},
+  year={2023},
+  publisher={Springer}
+}  
+```
 
